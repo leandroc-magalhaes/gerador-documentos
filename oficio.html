@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerador de Ofício Online</title>
+  <meta name="description" content="Modelo simples para gerar ofício administrativo formal.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h1>Gerador de Ofício Online</h1>
+
+<p>Preencha as informações abaixo e use o modelo como base.</p>
+
+<label>Destinatário:</label><br>
+<input id="destinatario"><br><br>
+
+<label>Assunto:</label><br>
+<input id="assunto"><br><br>
+
+<label>Contexto:</label><br>
+<textarea id="contexto"></textarea><br><br>
+
+<button onclick="gerar()">Gerar modelo</button>
+
+<h2>Resultado</h2>
+<textarea id="resultado" style="width:100%;height:300px;"></textarea>
+
+<script>
+function gerar() {
+  const destinatario = document.getElementById('destinatario').value;
+  const assunto = document.getElementById('assunto').value;
+  const contexto = document.getElementById('contexto').value;
+
+  const texto = `Prezado(a) ${destinatario},
+
+Cumprimentando-o(a) cordialmente, venho por meio deste tratar sobre ${assunto}.
+
+${contexto}
+
+Dessa forma, solicitamos a análise e as providências cabíveis.
+
+Atenciosamente,`;
+
+  document.getElementById('resultado').value = texto;
+}
+</script>
+
+</body>
+</html>
