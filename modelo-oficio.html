@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Modelo de Ofício Pronto para Copiar</title>
+  <meta name="description" content="Veja um modelo de ofício administrativo pronto para copiar, editar e adaptar conforme sua necessidade.">
+  <meta name="keywords" content="modelo de ofício, ofício pronto, ofício administrativo, exemplo de ofício, como fazer ofício">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container menu">
+    <div class="logo">Gerador Administrativo</div>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="oficio.html">Gerador de Ofício</a>
+      <a href="modelo-oficio.html">Modelo de Ofício</a>
+      <a href="#">Parecer</a>
+      <a href="#">Resposta</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Modelo de Ofício Pronto</h1>
+
+      <p>
+        Veja abaixo um modelo simples de ofício administrativo que pode ser copiado,
+        editado e adaptado conforme a sua necessidade.
+      </p>
+
+      <a class="btn" href="oficio.html">Usar Gerador de Ofício</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <h2>O que é um ofício?</h2>
+
+      <p>
+        O ofício é um documento formal utilizado para comunicação entre órgãos,
+        instituições, setores, empresas ou autoridades. Ele costuma ser usado para
+        solicitações, encaminhamentos, comunicações oficiais e pedidos de providências.
+      </p>
+
+      <p>
+        Em geral, o ofício deve ter linguagem clara, objetiva e respeitosa,
+        mantendo o padrão formal adequado ao ambiente administrativo.
+      </p>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <h2>Modelo de Ofício Administrativo</h2>
+
+      <div class="form-box">
+
+<textarea id="modelo" class="resultado" readonly>
+OFÍCIO Nº ___/____
+
+À/ao
+[Nome do destinatário]
+[Cargo ou setor]
+[Instituição]
+
+Assunto: [Informe o assunto do ofício]
+
+Prezado(a) Senhor(a),
+
+Cumprimentando-o(a) cordialmente, vimos por meio deste tratar sobre [descreva o assunto principal do ofício].
+
+Considerando [explique brevemente o contexto, a situação ou a justificativa], solicitamos/encaminhamos/informamos [descreva a providência, informação ou solicitação desejada].
+
+Dessa forma, solicitamos a análise e adoção das providências cabíveis.
+
+Atenciosamente,
+
+[Nome do responsável]
+[Cargo/Função]
+[Instituição]
+</textarea>
+
+        <br><br>
+
+        <button class="btn" onclick="copiarModelo()">Copiar Modelo</button>
+        <a class="btn btn-secundario" href="oficio.html">Gerar Ofício Personalizado</a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <h2>Como preencher o modelo de ofício?</h2>
+
+      <p>
+        Para usar o modelo, substitua as partes entre colchetes pelas informações
+        reais do seu documento. Por exemplo, onde estiver escrito
+        <strong>[Nome do destinatário]</strong>, informe o nome da pessoa, setor ou instituição
+        que receberá o ofício.
+      </p>
+
+      <p>
+        Também é importante preencher corretamente o número do ofício, o ano,
+        o assunto, a justificativa e a assinatura do responsável.
+      </p>
+
+      <div class="info">
+        <strong>Dica:</strong>
+        se preferir, você pode usar o gerador automático de ofício para montar
+        uma versão inicial do texto com base nas informações preenchidas.
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <h2>Estrutura básica de um ofício</h2>
+
+      <p>Um ofício geralmente contém:</p>
+
+      <ul>
+        <li>Número do documento;</li>
+        <li>Destinatário;</li>
+        <li>Assunto;</li>
+        <li>Saudação formal;</li>
+        <li>Corpo do texto;</li>
+        <li>Fechamento;</li>
+        <li>Assinatura do responsável.</li>
+      </ul>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Gerador de Documentos Administrativos — Projeto em desenvolvimento</p>
+</footer>
+
+<script>
+function copiarModelo() {
+  const modelo = document.getElementById('modelo');
+
+  modelo.select();
+  modelo.setSelectionRange(0, 99999);
+  document.execCommand('copy');
+
+  alert('Modelo copiado com sucesso!');
+}
+</script>
+
+</body>
+</html>
